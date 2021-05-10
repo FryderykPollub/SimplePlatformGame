@@ -1,19 +1,18 @@
-# SimplePlatformGame
----
+# **SimplePlatformGame**
 My first ever game made in Unity. It's really simple platform game. <br/>
 All assets used in this project are from Unity Asset Store and are free to use.
+<br/>
+<br/>
 
-Table of contents
-=================
-
+## **Table of contents**
 <!--ts-->
    * [To be added](#to-be-added)
    * [Known bugs](#known-bugs)
    * [Updates](#updates)
 <!--te-->
+<br/>
 
-To be added:
-============
+## **To be added:**
 - [ ] Second Level
 - [ ] Some kind of *Reset Level* option
 - [ ] Movement instructions
@@ -26,16 +25,14 @@ To be added:
 - [ ] *Control Settings* option in Options Menu
 - [ ] Boss fight 
 
-Known bugs:
-===========
+## **Known bugs:**
 - Player can stuck on the edges
 - Box when touched will move constantly until it get stopped by player, enemy or enviroment
   -  That leads to situation where path to the end of level can get blocked by box
 
-Updates
-=======
-Version 0.1:
-============
+## **Updates**
+### **Version 0.1:**
+
 - Simple movement (running, jumping, crouching, sprinting)
 - Collectible gems, every collected gem equals one point
 - Score is counting properly and displaying in the upper right corner
