@@ -10,22 +10,27 @@ public class GameController : MonoBehaviour
     [SerializeField] private Transform EndOfLevel;
     [SerializeField] private Text playerScore;
     [SerializeField] private GameObject gemsCount;
+    private int totalScore;
 
     private void Start()
     {
-        PlayerPrefs.SetInt("Lvl1MaxScore", Convert.ToInt32(gemsCount.transform.childCount));
+        totalScore = PlayerPrefs.GetInt("TotalScore");
+        PlayerPrefs.SetInt("MaxScore", Convert.ToInt32(gemsCount.transform.childCount));
+        PlayerPrefs.SetInt("CurrentLevel", Convert.ToInt32(SceneManager.GetActiveScene().buildIndex));
     }
     void FixedUpdate()
     {
         if (player.transform.position.y <= fallingKiller.position.y)
         {
-            Invoke("Restart", 1);
+            Invoke("Restart", 0.3f);
         }
 
         if(player.transform.position.x >= EndOfLevel.position.x)
         {
-            PlayerPrefs.SetInt("Lvl1Score", Convert.ToInt32(playerScore.text));
-            SceneManager.LoadScene("Lvl1-summary");
+            PlayerPrefs.SetInt("LevelScore", Convert.ToInt32(playerScore.text));
+            totalScore += PlayerPrefs.GetInt("LevelScore");
+            PlayerPrefs.SetInt("TotalScore", totalScore);
+            SceneManager.LoadScene("LevelSummary");
         }
     }
 

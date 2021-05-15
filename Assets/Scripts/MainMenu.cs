@@ -9,13 +9,14 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Level1");
+        PlayerPrefs.SetInt("TotalScore", 0);
         PlayerPrefs.SetInt("Health", healthValue);
+        SceneManager.LoadScene("Level1");
     }
 
-    public void HardMode(bool value)
+    public void HardMode(bool isHardMode)
     {
-        if (value) healthValue = 1;
+        if (isHardMode) healthValue = 1;
         else healthValue = 3;
     }
 
