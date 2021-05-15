@@ -13,8 +13,8 @@ All assets used in this project are from Unity Asset Store and are free to use.
 <br/>
 
 ## **To be added:**
-- [ ] Second Level
-- [ ] Some kind of *Reset Level* option
+- [ ] Up to 10 levels
+- [ ] Some kind of *Reset Level* option during playing
 - [ ] Movement instructions
 - [ ] Player can be killed by enemies
 - [ ] New type of enemy, moving vertically
@@ -31,6 +31,16 @@ All assets used in this project are from Unity Asset Store and are free to use.
   -  That leads to situation where path to the end of level can get blocked by box
 
 ## **Updates**
+### **Version 0.2:**
+- New level added
+- Level summary optimization
+  - Before: every level had its own summary
+  - After: there is one summary scene where every level ends
+- Better score counting up in level summary.
+- Total score added as PlayerPref
+- End Game scene added with total score counter
+- Time needed to restart level after falling decreased
+
 ### **Version 0.1:**
 
 - Simple movement (running, jumping, crouching, sprinting)
