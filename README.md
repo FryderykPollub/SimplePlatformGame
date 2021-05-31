@@ -14,8 +14,8 @@ All assets used in this project are from Unity Asset Store and are free to use.
 
 ## **To be added:**
 - [ ] Up to 10 levels
-- [ ] Some kind of *Reset Level* option during playing
-- [ ] Movement instructions
+- [x] Some kind of *Reset Level* option during playing
+- [x] Movement instructions
 - [ ] Player can be killed by enemies
 - [ ] New type of enemy, moving vertically
 - [ ] Ladders and player's on-ladder movement
@@ -27,10 +27,14 @@ All assets used in this project are from Unity Asset Store and are free to use.
 
 ## **Known bugs:**
 - Player can stuck on the edges
-- Box when touched will move constantly until it get stopped by player, enemy or enviroment
-  -  That leads to situation where path to the end of level can get blocked by box
 
 ## **Updates**
+### **Version 0.3:**
+- New level added
+- New button to exit level during playing
+- Box bug fixed
+- Fixed layer sorting
+
 ### **Version 0.2:**
 - New level added
 - Level summary optimization
