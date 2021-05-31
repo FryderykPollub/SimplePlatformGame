@@ -38,4 +38,9 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }
