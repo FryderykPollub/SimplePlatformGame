@@ -3,6 +3,7 @@ My first ever game made in Unity. It's really simple platform game. <br/>
 All assets used in this project are from Unity Asset Store and are free to use.
 <br/>
 <br/>
+### There is a [link](https://play.unity.com/mg/other/simpleplatformerweb) for you to play it
 
 ## **Table of contents**
 <!--ts-->
